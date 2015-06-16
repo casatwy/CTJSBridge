@@ -59,7 +59,6 @@ NSString * const kCTJSBridgeParamKeyNativeAPIName = @"methodName";
         }
     }
     
-    
     return result;
 }
 
