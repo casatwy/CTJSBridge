@@ -110,3 +110,24 @@ pod 'CTJSBridge', :git => 'git@github.com:casatwy/CTJSBridge.git'
 ```
 [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.1.228.115"]]];
 ```
+
+### 5. in your html page, use `LoadMethod` to call native responder
+
+```
+/*
+LoadMethod(methodName, data, callbacks);
+
+callbacks = {
+    success:function(data){/* your call back code*/},
+    fail:function(data){/* your call back code*/},
+    midway:function(data){/* your call back code*/}
+}
+
+*/
+
+LoadMethod("casa", {"key1":"value1", "key2":"value2"},{
+    success:function(data){alert(data)},
+    fail:function(data){alert(data)},
+    midway:function(data){alert(data)}
+});
+```
