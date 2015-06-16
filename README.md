@@ -35,7 +35,7 @@ change the url string to your server's IP, and now you can run your app to play 
 
 ## Quik Start
 
-1. create a configuration object which confirms to `<CTJSBridgeConfigurationProtocol>`，set the scheme and host for JSBridge.
+### 1. create a configuration object which confirms to `<CTJSBridgeConfigurationProtocol>`，set the scheme and host for JSBridge.
 
 ```
 @implementation DemoConfiguration
@@ -54,7 +54,7 @@ change the url string to your server's IP, and now you can run your app to play 
 @end
 ```
 
-2. create the native responder which confirms to `<CTJSBridgeNativeResponderProtocol>`
+### 2. create the native responder which confirms to `<CTJSBridgeNativeResponderProtocol>`
 
 ```
 @implementation DemoResponder
@@ -71,7 +71,7 @@ change the url string to your server's IP, and now you can run your app to play 
 @end
 ```
 
-3. initiate an instance of `CTJSBridgeWebviewDelegate`, registe the class of your responder and configuration object, and set this delegate as your webview's delegate.
+### 3. initiate an instance of `CTJSBridgeWebviewDelegate`, registe the class of your responder and configuration object, and set this delegate as your webview's delegate.
 
 ```
 - (CTJSBridgeWebviewDelegate *)webviewDelegate
@@ -99,7 +99,7 @@ change the url string to your server's IP, and now you can run your app to play 
 }
 ```
 
-4. add your webview to view controller, and load.
+### 4. add your webview to view controller, and load.
 
 ```
 [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.1.228.115"]]];
