@@ -25,6 +25,16 @@ NSString * const kCTJSBridgeParamKeyNativeAPIName = @"methodName";
 @implementation CTJSBridgeWebviewDelegate
 
 #pragma mark - public methods
++ (instancetype)sharedInstance
+{
+    static dispatch_once_t onceToken;
+    static CTJSBridgeWebviewDelegate *webviewDelegate = nil;
+    dispatch_once(&onceToken, ^{
+        webviewDelegate = [[CTJSBridgeWebviewDelegate alloc] init];
+    });
+    return webviewDelegate;
+}
+
 - (void)registeConfigurationClass:(__unsafe_unretained Class)className
 {
     self.configuration = [[className alloc] init];

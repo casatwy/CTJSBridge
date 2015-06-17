@@ -11,6 +11,8 @@
 
 @interface CTJSBridgeWebviewDelegate : NSObject <UIWebViewDelegate>
 
++ (instancetype)sharedInstance;
+
 - (void)registeConfigurationClass:(__unsafe_unretained Class)className;
 - (void)registeNativeResponderClass:(__unsafe_unretained Class)responderClass forMethodName:(NSString *)methodName;
 
