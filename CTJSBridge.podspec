@@ -16,13 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CTJSBridge"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "a javascript bridge for iOS app to interact with h5 web view."
-
-  s.description  = <<-DESC
-                    a javascript bridge for iOS app to interact with h5 web view
-                   DESC
-
   s.homepage     = "https://github.com/casatwy/CTJSBridge"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -34,8 +29,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
