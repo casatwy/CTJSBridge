@@ -38,7 +38,7 @@ change the url string to your server's IP, and now you can run your app to play 
 ### 0. add pod
 
 ```
-pod 'CTJSBridge', :git => 'git@github.com:casatwy/CTJSBridge.git'
+pod 'CTJSBridge'
 ```
 
 ### 1. create a configuration object which confirms to `<CTJSBridgeConfigurationProtocol>`，set the scheme and host for JSBridge.
