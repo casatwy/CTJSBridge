@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CTJSBridge"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "a javascript bridge for iOS app to interact with h5 web view."
 
   s.description  = <<-DESC
