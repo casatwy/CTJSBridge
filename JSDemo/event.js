@@ -7,7 +7,7 @@ function bindEvent() {
         LoadMethod("casa", {"key1":"value1", "key2":"value2"},{
             success:function(data){alert(data)},
             fail:function(data){alert(data)},
-            midway:function(data){alert(data)}
+            progress:function(data){alert(data)}
         });
     });
 }

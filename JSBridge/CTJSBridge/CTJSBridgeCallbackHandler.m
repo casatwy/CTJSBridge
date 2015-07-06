@@ -28,14 +28,14 @@
     return self;
 }
 
-- (void)midwayWithResultDictionary:(NSDictionary *)resultData
+- (void)progressWithResultDictionary:(NSDictionary *)resultData
 {
     if (self.webview) {
         NSError *error = nil;
         NSString *resultDataString = [[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:resultData options:0 error:&error] encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
         
         if (!error) {
-            NSString *callbackString = [NSString stringWithFormat:@"window.Callback(\"%@\", \"midway\", \"%@\")", self.callbackIdentifier, resultDataString];
+            NSString *callbackString = [NSString stringWithFormat:@"window.Callback(\"%@\", \"progress\", \"%@\")", self.callbackIdentifier, resultDataString];
             [self.webview performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:callbackString waitUntilDone:NO];
         } else {
             NSLog(@"CTJSBridgeCallbackHandler:%s:%d: %@", __PRETTY_FUNCTION__, __LINE__, error);

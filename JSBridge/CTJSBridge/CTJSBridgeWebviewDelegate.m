@@ -59,7 +59,7 @@ NSString * const kCTJSBridgeParamKeyNativeAPIName = @"methodName";
             
             id<CTJSBridgeNativeResponderProtocol> responder = [self responderWithMethodName:params[kCTJSBridgeParamKeyNativeAPIName]];
             if (responder && [responder respondsToSelector:@selector(performActionWithParams:callbackHandler:)]) {
-                [callbackHandler midwayWithResultDictionary:@{@"status":@"willStartAction", @"params":params}];
+                [callbackHandler progressWithResultDictionary:@{@"status":@"willStartAction", @"params":params}];
                 [responder performActionWithParams:params[kCTJSBridgeParamKeyParams] callbackHandler:callbackHandler];
             } else {
                 [callbackHandler failedWithResultDictionary:@{@"error":@"no responder for your method"}];

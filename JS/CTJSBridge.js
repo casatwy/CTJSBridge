@@ -32,9 +32,9 @@ window.Callback = function(identifier, resultStatus, resultData) {
         if (resultStatus == "fail") {
             callBackDict.fail(resultData);
         }
-        if (resultStatus == "midway") {
+        if (resultStatus == "progress") {
             isFinished = false;
-            callBackDict.midway(resultData);
+            callBackDict.progress(resultData);
         }
 
         if (isFinished) {

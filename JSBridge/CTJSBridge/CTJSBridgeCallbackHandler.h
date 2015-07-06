@@ -12,7 +12,7 @@
 
 - (instancetype)initWithWebview:(UIWebView *)webview callbackIdentifier:(NSString *)callbackIdentifier;
 
-- (void)midwayWithResultDictionary:(NSDictionary *)resultDictionary;
+- (void)progressWithResultDictionary:(NSDictionary *)resultDictionary;
 - (void)successWithResultDictionary:(NSDictionary *)resultDictionary;
 - (void)failedWithResultDictionary:(NSDictionary *)resultDictionary;
 

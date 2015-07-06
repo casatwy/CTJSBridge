@@ -16,7 +16,7 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"hello" message:@"here i am" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
     [alert show];
-    [callbackHandler midwayWithResultDictionary:@{@"status":@"midway"}];
+    [callbackHandler progressWithResultDictionary:@{@"status":@"progress"}];
     [callbackHandler successWithResultDictionary:@{@"success":@"success"}];
 }
 
