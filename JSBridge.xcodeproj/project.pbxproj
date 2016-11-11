@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AB882421DD569ED00F1C71C /* CTJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJSBridge.h; sourceTree = "<group>"; };
 		4AD812DF1B2EB2A400032D12 /* JSBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD812E31B2EB2A400032D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AD812E41B2EB2A400032D12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		4AD813191B2FD26800032D12 /* CTJSBridge */ = {
 			isa = PBXGroup;
 			children = (
+				4AB882421DD569ED00F1C71C /* CTJSBridge.h */,
 				4AD8131A1B2FD26800032D12 /* CTJSBridgeCallbackHandler.h */,
 				4AD8131B1B2FD26800032D12 /* CTJSBridgeCallbackHandler.m */,
 				4AD8131C1B2FD26800032D12 /* CTJSBridgeConfigurationProtocol.h */,
@@ -458,6 +460,7 @@
 				4AD813041B2EB2A500032D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AD813051B2EB2A500032D12 /* Build configuration list for PBXNativeTarget "JSBridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +469,7 @@
 				4AD813071B2EB2A500032D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
