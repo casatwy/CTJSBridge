@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <style type="text/css">
+    *{
+      margin:  0;
+      padding: 0;
+    }
+    .box{
+      text-align: center;
+    }
+    .btn{
+      line-height: 44px;
+      text-align: center;
+      font-size: 14px;
+      border: 1px solid blue;
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+    .message{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      color: #000;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="box">
+    <div class="message" id="message"></div>
+    <button class="btn" id="J_NativeMethodButton" onclick="HandleAPIMethod();">API Method</button>
+    <br />
+    <button class="btn" id="J_APIMethod" onclick="HandleNativeMethod();">Native Method</button>
+  </div>
+  <script>
+
+    window.ct_isInDevice || document.write('<script src="/CTJSBridge_remote.js"><\/script>')
+
+    function HandleAPIMethod() {
+      window.CTJSBridge.LoadAPI("CTMarvelCharactersAPIManager", {"orderBy":"modified"}, {
+        "success":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+        "fail":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+        "progress":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+      });
+    }
+
+    function HandleNativeMethod() {
+      window.CTJSBridge.LoadMethod("Demo", "push", {"key":"value"}, {
+        "success":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+        "fail":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+        "progress":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+      });
+
+      document.getElementById('message').innerHTML = "api";
+    }
+  </script>
+</body>
+</html>

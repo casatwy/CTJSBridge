@@ -1,0 +1,8 @@
+ctserver.run
+CTJSBridge.xcodeproj/xcuserdata/
+CTJSBridge.xcworkspace/
+Pods/
+*.swp
+.DS_Store
+CTJSBridge.xcodeproj/project.xcworkspace/xcuserdata/
+Podfile.lock

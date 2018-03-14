@@ -7,25 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A6BF3152058BE3600EAB165 /* CTJSBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BF3142058BE3600EAB165 /* CTJSBridge.js */; };
+		4A6BF3282058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF31D2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m */; };
+		4A6BF3292058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF3202058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m */; };
+		4A6BF32A2058CC4200EAB165 /* CTWKWebviewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF3232058CC4200EAB165 /* CTWKWebviewHelper.m */; };
+		4A6BF32B2058CC4200EAB165 /* WKWebView+CTJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF3272058CC4200EAB165 /* WKWebView+CTJSBridge.m */; };
+		4A6BF3332058D67400EAB165 /* CTRemoteH5Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF3322058D67400EAB165 /* CTRemoteH5Debug.m */; };
+		4A6BF3402058EA2000EAB165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF33D2058EA2000EAB165 /* ViewController.m */; };
+		4A6BF3462058EB4400EAB165 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF3452058EB4400EAB165 /* DemoViewController.m */; };
+		4A6BF349205900D800EAB165 /* Target_CTAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF348205900D800EAB165 /* Target_CTAppContext.m */; };
+		4A6BF34C2059010200EAB165 /* Target_H5Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF34B2059010200EAB165 /* Target_H5Demo.m */; };
+		4A6BF350205908F500EAB165 /* Target_CTMarvelKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF34F205908F500EAB165 /* Target_CTMarvelKey.m */; };
 		4ACA2C382058BC6D00D48F0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA2C372058BC6D00D48F0E /* AppDelegate.m */; };
-		4ACA2C3B2058BC6D00D48F0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA2C3A2058BC6D00D48F0E /* ViewController.m */; };
 		4ACA2C3E2058BC6D00D48F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA2C3C2058BC6D00D48F0E /* Main.storyboard */; };
 		4ACA2C402058BC6D00D48F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA2C3F2058BC6D00D48F0E /* Assets.xcassets */; };
 		4ACA2C432058BC6D00D48F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA2C412058BC6D00D48F0E /* LaunchScreen.storyboard */; };
 		4ACA2C462058BC6D00D48F0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA2C452058BC6D00D48F0E /* main.m */; };
+		8B2718D69C5740015BD2EA81 /* libPods-CTJSBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AF62A276E79FBAD995852F /* libPods-CTJSBridge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14FD917A55D76D133B8802E4 /* Pods-CTJSBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTJSBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge.debug.xcconfig"; sourceTree = "<group>"; };
+		4A6BF3142058BE3600EAB165 /* CTJSBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = CTJSBridge.js; sourceTree = "<group>"; };
+		4A6BF3192058CAD900EAB165 /* CTJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJSBridge.h; sourceTree = "<group>"; };
+		4A6BF31D2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWKWebViewNativeMethodMessageHandler.m; sourceTree = "<group>"; };
+		4A6BF31E2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWKWebViewNativeMethodMessageHandler.h; sourceTree = "<group>"; };
+		4A6BF3202058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWKWebViewAPIMessageHandler.m; sourceTree = "<group>"; };
+		4A6BF3212058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWKWebViewAPIMessageHandler.h; sourceTree = "<group>"; };
+		4A6BF3232058CC4200EAB165 /* CTWKWebviewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWKWebviewHelper.m; sourceTree = "<group>"; };
+		4A6BF3242058CC4200EAB165 /* CTWKWebviewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWKWebviewHelper.h; sourceTree = "<group>"; };
+		4A6BF3262058CC4200EAB165 /* WKWebView+CTJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+CTJSBridge.h"; sourceTree = "<group>"; };
+		4A6BF3272058CC4200EAB165 /* WKWebView+CTJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+CTJSBridge.m"; sourceTree = "<group>"; };
+		4A6BF3312058D67400EAB165 /* CTRemoteH5Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTRemoteH5Debug.h; sourceTree = "<group>"; };
+		4A6BF3322058D67400EAB165 /* CTRemoteH5Debug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTRemoteH5Debug.m; sourceTree = "<group>"; };
+		4A6BF33D2058EA2000EAB165 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A6BF33F2058EA2000EAB165 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4A6BF3442058EB4300EAB165 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		4A6BF3452058EB4400EAB165 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		4A6BF347205900D800EAB165 /* Target_CTAppContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_CTAppContext.h; sourceTree = "<group>"; };
+		4A6BF348205900D800EAB165 /* Target_CTAppContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_CTAppContext.m; sourceTree = "<group>"; };
+		4A6BF34A2059010200EAB165 /* Target_H5Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_H5Demo.h; sourceTree = "<group>"; };
+		4A6BF34B2059010200EAB165 /* Target_H5Demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_H5Demo.m; sourceTree = "<group>"; };
+		4A6BF34E205908F500EAB165 /* Target_CTMarvelKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_CTMarvelKey.h; sourceTree = "<group>"; };
+		4A6BF34F205908F500EAB165 /* Target_CTMarvelKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_CTMarvelKey.m; sourceTree = "<group>"; };
 		4ACA2C332058BC6D00D48F0E /* CTJSBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTJSBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACA2C362058BC6D00D48F0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4ACA2C372058BC6D00D48F0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4ACA2C392058BC6D00D48F0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4ACA2C3A2058BC6D00D48F0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4ACA2C3D2058BC6D00D48F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ACA2C3F2058BC6D00D48F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ACA2C422058BC6D00D48F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ACA2C442058BC6D00D48F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACA2C452058BC6D00D48F0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EB535AD573788911915B991 /* Pods-CTJSBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTJSBridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge.release.xcconfig"; sourceTree = "<group>"; };
+		E9AF62A276E79FBAD995852F /* libPods-CTJSBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTJSBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +67,144 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2718D69C5740015BD2EA81 /* libPods-CTJSBridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A6BF3132058BCC700EAB165 /* CTJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF3192058CAD900EAB165 /* CTJSBridge.h */,
+				4A6BF3142058BE3600EAB165 /* CTJSBridge.js */,
+				4A6BF31A2058CC4200EAB165 /* Tools */,
+			);
+			path = CTJSBridge;
+			sourceTree = "<group>";
+		};
+		4A6BF31A2058CC4200EAB165 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF3302058D66400EAB165 /* RemoteH5Debug */,
+				4A6BF31B2058CC4200EAB165 /* MessageHandler */,
+				4A6BF3222058CC4200EAB165 /* Helper */,
+				4A6BF3252058CC4200EAB165 /* Factory */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4A6BF31B2058CC4200EAB165 /* MessageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF31C2058CC4200EAB165 /* NativeMethod */,
+				4A6BF31F2058CC4200EAB165 /* API */,
+			);
+			path = MessageHandler;
+			sourceTree = "<group>";
+		};
+		4A6BF31C2058CC4200EAB165 /* NativeMethod */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF31E2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.h */,
+				4A6BF31D2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m */,
+			);
+			path = NativeMethod;
+			sourceTree = "<group>";
+		};
+		4A6BF31F2058CC4200EAB165 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF3202058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m */,
+				4A6BF3212058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4A6BF3222058CC4200EAB165 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF3232058CC4200EAB165 /* CTWKWebviewHelper.m */,
+				4A6BF3242058CC4200EAB165 /* CTWKWebviewHelper.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4A6BF3252058CC4200EAB165 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF3262058CC4200EAB165 /* WKWebView+CTJSBridge.h */,
+				4A6BF3272058CC4200EAB165 /* WKWebView+CTJSBridge.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		4A6BF3302058D66400EAB165 /* RemoteH5Debug */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF3312058D67400EAB165 /* CTRemoteH5Debug.h */,
+				4A6BF3322058D67400EAB165 /* CTRemoteH5Debug.m */,
+			);
+			path = RemoteH5Debug;
+			sourceTree = "<group>";
+		};
+		4A6BF3382058EA2000EAB165 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF33F2058EA2000EAB165 /* ViewController.h */,
+				4A6BF33D2058EA2000EAB165 /* ViewController.m */,
+				4A6BF3442058EB4300EAB165 /* DemoViewController.h */,
+				4A6BF3452058EB4400EAB165 /* DemoViewController.m */,
+				4A6BF33A2058EA2000EAB165 /* Targets */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		4A6BF33A2058EA2000EAB165 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF34D205908D200EAB165 /* Key */,
+				4A6BF33B2058EA2000EAB165 /* Demo */,
+				4A6BF33C2058EA2000EAB165 /* CTNetworking */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		4A6BF33B2058EA2000EAB165 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF34A2059010200EAB165 /* Target_H5Demo.h */,
+				4A6BF34B2059010200EAB165 /* Target_H5Demo.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		4A6BF33C2058EA2000EAB165 /* CTNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF347205900D800EAB165 /* Target_CTAppContext.h */,
+				4A6BF348205900D800EAB165 /* Target_CTAppContext.m */,
+			);
+			path = CTNetworking;
+			sourceTree = "<group>";
+		};
+		4A6BF34D205908D200EAB165 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BF34E205908F500EAB165 /* Target_CTMarvelKey.h */,
+				4A6BF34F205908F500EAB165 /* Target_CTMarvelKey.m */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
 		4ACA2C2A2058BC6D00D48F0E = {
 			isa = PBXGroup;
 			children = (
 				4ACA2C352058BC6D00D48F0E /* CTJSBridge */,
 				4ACA2C342058BC6D00D48F0E /* Products */,
+				CC6C552EFC9D393B511C3883 /* Pods */,
+				7EF653C6E12CC9E8482695D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +219,10 @@
 		4ACA2C352058BC6D00D48F0E /* CTJSBridge */ = {
 			isa = PBXGroup;
 			children = (
+				4A6BF3132058BCC700EAB165 /* CTJSBridge */,
 				4ACA2C362058BC6D00D48F0E /* AppDelegate.h */,
 				4ACA2C372058BC6D00D48F0E /* AppDelegate.m */,
-				4ACA2C392058BC6D00D48F0E /* ViewController.h */,
-				4ACA2C3A2058BC6D00D48F0E /* ViewController.m */,
+				4A6BF3382058EA2000EAB165 /* Demo */,
 				4ACA2C3C2058BC6D00D48F0E /* Main.storyboard */,
 				4ACA2C3F2058BC6D00D48F0E /* Assets.xcassets */,
 				4ACA2C412058BC6D00D48F0E /* LaunchScreen.storyboard */,
@@ -71,6 +232,23 @@
 			path = CTJSBridge;
 			sourceTree = "<group>";
 		};
+		7EF653C6E12CC9E8482695D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9AF62A276E79FBAD995852F /* libPods-CTJSBridge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC6C552EFC9D393B511C3883 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14FD917A55D76D133B8802E4 /* Pods-CTJSBridge.debug.xcconfig */,
+				7EB535AD573788911915B991 /* Pods-CTJSBridge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ACA2C492058BC6D00D48F0E /* Build configuration list for PBXNativeTarget "CTJSBridge" */;
 			buildPhases = (
+				C089FC245C8DE4B1C6EFA659 /* [CP] Check Pods Manifest.lock */,
 				4ACA2C2F2058BC6D00D48F0E /* Sources */,
 				4ACA2C302058BC6D00D48F0E /* Frameworks */,
 				4ACA2C312058BC6D00D48F0E /* Resources */,
+				FB037300B3AF18054DDEFC5C /* [CP] Embed Pods Frameworks */,
+				FBF597D57C4B1520189FD0B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ACA2C432058BC6D00D48F0E /* LaunchScreen.storyboard in Resources */,
+				4A6BF3152058BE3600EAB165 /* CTJSBridge.js in Resources */,
 				4ACA2C402058BC6D00D48F0E /* Assets.xcassets in Resources */,
 				4ACA2C3E2058BC6D00D48F0E /* Main.storyboard in Resources */,
 			);
@@ -137,12 +319,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C089FC245C8DE4B1C6EFA659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CTJSBridge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB037300B3AF18054DDEFC5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF597D57C4B1520189FD0B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4ACA2C2F2058BC6D00D48F0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ACA2C3B2058BC6D00D48F0E /* ViewController.m in Sources */,
+				4A6BF32B2058CC4200EAB165 /* WKWebView+CTJSBridge.m in Sources */,
+				4A6BF34C2059010200EAB165 /* Target_H5Demo.m in Sources */,
+				4A6BF349205900D800EAB165 /* Target_CTAppContext.m in Sources */,
+				4A6BF3292058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m in Sources */,
+				4A6BF3402058EA2000EAB165 /* ViewController.m in Sources */,
+				4A6BF3282058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m in Sources */,
+				4A6BF3332058D67400EAB165 /* CTRemoteH5Debug.m in Sources */,
+				4A6BF32A2058CC4200EAB165 /* CTWKWebviewHelper.m in Sources */,
+				4A6BF350205908F500EAB165 /* Target_CTMarvelKey.m in Sources */,
+				4A6BF3462058EB4400EAB165 /* DemoViewController.m in Sources */,
 				4ACA2C462058BC6D00D48F0E /* main.m in Sources */,
 				4ACA2C382058BC6D00D48F0E /* AppDelegate.m in Sources */,
 			);
@@ -276,6 +518,7 @@
 		};
 		4ACA2C4A2058BC6D00D48F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FD917A55D76D133B8802E4 /* Pods-CTJSBridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +533,7 @@
 		};
 		4ACA2C4B2058BC6D00D48F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB535AD573788911915B991 /* Pods-CTJSBridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
