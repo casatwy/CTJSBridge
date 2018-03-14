@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.ios.resource  = "icon.png"
+  s.ios.resource  = "CTJSBridge/CTJSBridge/CTJSBridge.js"
   # s.ios.resources = "Resources/*.png"
 
   # s.ios.preserve_paths = "FilesToSave", "MoreFilesToSave"
