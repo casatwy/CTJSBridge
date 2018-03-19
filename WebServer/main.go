@@ -8,5 +8,5 @@ import (
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("./static")))
 	log.Print("running at http://localhost")
-	log.Fatal(http.ListenAndServe(":3001", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
