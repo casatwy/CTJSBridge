@@ -99,7 +99,7 @@ create `WKWebview` with the category method:
 }
 ```
 
-ta~da~ there you go!
+tada~ there you go!
 
 > see demo code for more detail:
 
