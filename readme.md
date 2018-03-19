@@ -85,6 +85,7 @@ window.CTJSBridge.LoadAPI("CTMarvelCharactersAPIManager", {"orderBy":"modified"}
 create `WKWebview` with the category method:
 
 ```objective-c
+#import <CTJSBridge/CTJSBridge.h>
 - (WKWebView *)webview
 {
     if (_webview == nil) {
