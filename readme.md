@@ -43,7 +43,8 @@ make: *** [run] Error 1` Error. Open then `CTJSBridge/WebServer/main.go` file an
 see js call below:
 
 ```javascript
-window.CTJSBridge.LoadMethod("Demo", "push", {"key":"value"}, {
+
+      window.CTJSBridge.LoadMethod("Demo", "push", {"key":"value"}, {
         "success":function(result){
           document.getElementById('message').innerHTML = result;
         },
@@ -54,6 +55,7 @@ window.CTJSBridge.LoadMethod("Demo", "push", {"key":"value"}, {
           document.getElementById('message').innerHTML = result;
         },
       });
+
 ```
 
 CTJSBridge will alloc the Object named `Target_H5Demo` (`Target_H5` + `Demo`), and call `Action_push:` (`Action_` + `push`) with params `{"key":"value"}`. So you just make sure that you have a correct object and selector, CTJSBridge will call it!
