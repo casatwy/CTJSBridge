@@ -38,7 +38,9 @@ make: *** [run] Error 1` Error. Open then `CTJSBridge/WebServer/main.go` file an
 
 ## Usage
 
-you don't have to register any object, see js call below:
+> Make calls
+
+see js call below:
 
 ```javascript
 window.CTJSBridge.LoadMethod("Demo", "push", {"key":"value"}, {
@@ -54,11 +56,47 @@ window.CTJSBridge.LoadMethod("Demo", "push", {"key":"value"}, {
       });
 ```
 
-CTJSBridge will alloc the Object named `Target_H5Demo`, and call `Action_push:` with params `{"key":"value"}`.
+CTJSBridge will alloc the Object named `Target_H5Demo` (`Target_H5` + `Demo`), and call `Action_push:` (`Action_` + `push`) with params `{"key":"value"}`. So you just make sure that you have a correct object and selector, CTJSBridge will call it!
+
+the params should always be a dictionary.
 
 In the params send to `Action_push:`, you will find three block named `success`,`fail`,`progress`，they received a NSDictionary as callback data to js.
 
-see demo code for more detail:
+---
+
+if you are using [CTNetworking](https://github.com/casatwy/CTNetworking) to make API call in your app, just send the name of API Manager and API params, you call Native API from js on the fly! No extra works!
+
+```javascript
+window.CTJSBridge.LoadAPI("CTMarvelCharactersAPIManager", {"orderBy":"modified"}, {
+        "success":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+        "fail":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+        "progress":function(result){
+          document.getElementById('message').innerHTML = result;
+        },
+      });
+```
+
+> Create WKWebview
+
+create `WKWebview` with the category method:
+
+```objective-c
+- (WKWebView *)webview
+{
+    if (_webview == nil) {
+        _webview = [WKWebView ct_WKWebViewWithConfiguration:nil prefixUserAgent:nil];
+    }
+    return _webview;
+}
+```
+
+ta~da~ there you go!
+
+> see demo code for more detail:
 
 calling from js: [https://github.com/casatwy/CTJSBridge/blob/master/WebServer/static/index.html](https://github.com/casatwy/CTJSBridge/blob/master/WebServer/static/index.html)
 
