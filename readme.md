@@ -72,8 +72,7 @@ pod 'CTJSBridge'
 
 ## Requirements
 
-* iOS 8 or higher
-* golang
+* iOS 9 or higher
 
 ## Authors
 
