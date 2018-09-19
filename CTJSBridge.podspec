@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CTJSBridge"
-  s.version      = "14"
+  s.version      = "15"
   s.summary      = "CTJSBridge."
 
   # This description is used to generate tags and improve search results.
