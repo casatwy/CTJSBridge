@@ -35,11 +35,6 @@
     [self.enterButton centerEqualToView:self.view];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
 #pragma mark - event response
 - (void)didTappedEnterButton:(UIButton *)button
 {
