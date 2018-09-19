@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A080ED121523EAE00AAB5F8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A080ED021523EAE00AAB5F8 /* WebViewController.m */; };
 		4A6BF3152058BE3600EAB165 /* CTJSBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BF3142058BE3600EAB165 /* CTJSBridge.js */; };
 		4A6BF3282058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF31D2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m */; };
 		4A6BF3292058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BF3202058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		14FD917A55D76D133B8802E4 /* Pods-CTJSBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTJSBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge.debug.xcconfig"; sourceTree = "<group>"; };
+		4A080ECF21523EAE00AAB5F8 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		4A080ED021523EAE00AAB5F8 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		4A6BF3142058BE3600EAB165 /* CTJSBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = CTJSBridge.js; sourceTree = "<group>"; };
 		4A6BF3192058CAD900EAB165 /* CTJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJSBridge.h; sourceTree = "<group>"; };
 		4A6BF31D2058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWKWebViewNativeMethodMessageHandler.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 			children = (
 				4A6BF33F2058EA2000EAB165 /* ViewController.h */,
 				4A6BF33D2058EA2000EAB165 /* ViewController.m */,
+				4A080ECF21523EAE00AAB5F8 /* WebViewController.h */,
+				4A080ED021523EAE00AAB5F8 /* WebViewController.m */,
 				4A6BF3442058EB4300EAB165 /* DemoViewController.h */,
 				4A6BF3452058EB4400EAB165 /* DemoViewController.m */,
 				4A6BF33A2058EA2000EAB165 /* Targets */,
@@ -260,8 +265,6 @@
 				4ACA2C2F2058BC6D00D48F0E /* Sources */,
 				4ACA2C302058BC6D00D48F0E /* Frameworks */,
 				4ACA2C312058BC6D00D48F0E /* Resources */,
-				FB037300B3AF18054DDEFC5C /* [CP] Embed Pods Frameworks */,
-				FBF597D57C4B1520189FD0B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,7 +281,7 @@
 		4ACA2C2B2058BC6D00D48F0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = casa;
 				TargetAttributes = {
 					4ACA2C322058BC6D00D48F0E = {
@@ -338,36 +341,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB037300B3AF18054DDEFC5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBF597D57C4B1520189FD0B5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CTJSBridge/Pods-CTJSBridge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -381,6 +354,7 @@
 				4A6BF3292058CC4200EAB165 /* CTWKWebViewAPIMessageHandler.m in Sources */,
 				4A6BF3402058EA2000EAB165 /* ViewController.m in Sources */,
 				4A6BF3282058CC4200EAB165 /* CTWKWebViewNativeMethodMessageHandler.m in Sources */,
+				4A080ED121523EAE00AAB5F8 /* WebViewController.m in Sources */,
 				4A6BF3332058D67400EAB165 /* CTRemoteH5Debug.m in Sources */,
 				4A6BF32A2058CC4200EAB165 /* CTWKWebviewHelper.m in Sources */,
 				4A6BF350205908F500EAB165 /* Target_CTMarvelKey.m in Sources */,
@@ -426,6 +400,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -433,6 +408,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -481,6 +457,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -488,6 +465,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -7,41 +7,59 @@
 //
 
 #import "ViewController.h"
-#import "CTJSBridge.h"
 #import <HandyFrame/UIView+LayoutMethods.h>
-#import <CTHandyCategories/NSObject+CTIP.h>
+#import "WebViewController.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) WKWebView *webview;
+@property (nonatomic, strong) UIButton *enterButton;
+@property (nonatomic, weak) WKWebView *webview;
+@property (nonatomic, weak) UIViewController *viewController;
 
 @end
 
 @implementation ViewController
 
-#pragma mark - life cycle
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view addSubview:self.webview];
-    
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", [self ct_ipAddressWithShouldPreferIPv4:YES]]];
-    [self.webview loadRequest:[NSURLRequest requestWithURL:url]];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.enterButton];
 }
 
-- (void)viewWillLayoutSubviews
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillLayoutSubviews];
-    [self.webview fill];
+    [super viewWillAppear:animated];
+    [self.enterButton sizeToFit];
+    [self.enterButton centerEqualToView:self.view];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+#pragma mark - event response
+- (void)didTappedEnterButton:(UIButton *)button
+{
+    NSLog(@"%@", self.webview);
+    NSLog(@"%@", self.viewController);
+    WebViewController *viewController = [[WebViewController alloc] init];
+    self.webview = viewController.webview;
+    self.viewController = viewController;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - getters and setters
-- (WKWebView *)webview
+- (UIButton *)enterButton
 {
-    if (_webview == nil) {
-        _webview = [WKWebView ct_WKWebViewWithConfiguration:nil prefixUserAgent:nil];
+    if (_enterButton == nil) {
+        _enterButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [_enterButton addTarget:self action:@selector(didTappedEnterButton:) forControlEvents:UIControlEventTouchUpInside];
+        [_enterButton setTitle:@"enter" forState:UIControlStateNormal];
     }
-    return _webview;
+    return _enterButton;
 }
 
 @end

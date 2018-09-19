@@ -175,10 +175,10 @@
 {
     [self ct_showAlertWithTitle:@""
                         message:[NSString stringWithFormat:@"Connect Info:%@:%@\nClient Count: %lu",
-                                 [self ct_ipAddressWithShouldPreferIPv4:YES],
-                                 self.port,
-                                 (unsigned long)self.clientList.count]
-                    actionTitle:@"OK"
+                                            [self ct_ipAddressWithShouldPreferIPv4:YES],
+                                            self.port,
+                                            (unsigned long)self.clientList.count]
+                actionTitleList:@[@"OK"]
                         handler:nil
                      completion:nil];
 }
